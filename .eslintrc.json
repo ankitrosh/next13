@@ -1,3 +1,6 @@
 {
-  "extends": "next/core-web-vitals"
+  // standard (eslint-config-standard) provides basic rules like spacing, quote usage etc
+  // tailwind (eslint-plugin-tailwindcss) plugin orders classes used in logical order instead of letting them be random
+  // prettier (eslint-config-prettier) helps remove clashes btw prettier and eslint
+  "extends": ["next/core-web-vitals", "standard", "plugin:tailwindcss/recommended", "prettier"]
 }
